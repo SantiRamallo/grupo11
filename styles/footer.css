@@ -1,5 +1,5 @@
 footer {
-    background-color: #f8f3f3;
+    background-color: #83bcde;
     color: white;
     padding: 20px;
     display: flex;
@@ -41,9 +41,11 @@ footer a{
 .footer ul{
     padding: 20px;
 }
-.footer a:hover{
+.left-section a:hover,
+.middle-section a:hover,
+.right-section a:hover {
     text-decoration: none;
-    color: black;
+    color: #4d4ddb;
 }
 
 

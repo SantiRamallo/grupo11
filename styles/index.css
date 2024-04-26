@@ -19,83 +19,36 @@ a {
 */
 
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.slider {
-    width: 100%;
-    max-height: 300px; /* Ajusta el valor según la altura deseada */
-    overflow: hidden;
-}
-.slider ul {
-    display: flex;
-    animation: cambio 20s infinite alternate linear;
-    width: 200%;
-}
-.slider li {
-    width: 100%;
-    list-style: none;
-}
-.slider img {
-    width: 100%;
-    height: 40%; /* Ajusta la altura automáticamente para mantener la proporción */
-}
-@keyframes cambio {
-    0% { margin-left: 0; }
-    20% { margin-left: 0; }
-    25% { margin-left: -100%; }
-    45% { margin-left: -100%; }
-    50% { margin-left: 0; }
-    70% { margin-left: 0; }
-    75% { margin-left: -100%; }
-    100% { margin-left: -100%; }
-}
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-    .slider,
-    .slider ul,
-    .slider img {
-        height: 100vh;
-    }
+
+header{
+    background-color: #83bcde;
 }
 
-section {
-    font-family: Arial, sans-serif; 
-    font-size: 16px; 
-    text-align: center; 
+.navbar-custom .nav-link {
+    color: black; 
 }
 
-.about-toggle {
-    display: none;
+.navbar-custom .nav-link:hover {
+    color: #4d4ddb; 
 }
 
-.about-btn {
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    display: block; /* Convertir el botón en un bloque para que ocupe todo el ancho disponible */
-    margin: 0 auto; /* Establecer márgenes automáticos para centrar horizontalmente */
-    width: fit-content; /* Ajustar el ancho del botón al contenido */
+.carousel-container {
+    border: 2px solid #ddd; /* Borde delgado de color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el borde afecte el diseño */
 }
 
-.about-text {
-    display: none;
-    margin-top: 20px;
-    text-align: center; 
-    font-family: Arial, sans-serif;
+.img1 {
+    width: 600px; 
 }
-
-.about-toggle:checked + .about-text {
-    display: block;
+.img3 {
+    width: 550px; 
 }
-
-
-
 footer {
     text-align: center;    
 }
@@ -107,3 +60,48 @@ footer li {
 footer a {
     text-decoration: none;
 }
+
+.tarjetas{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card a {
+    color: inherit; /* Utiliza el color heredado del texto */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.card{
+    margin: 10px; /* Añade espacio entre las tarjetas */
+    flex: 1; /* Para que las tarjetas ocupen el espacio disponible */
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    .card-group{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.custom-img{
+    width: 150px;
+    height: auto;
+}
+
+/* Estilo para posicionar "Python" y "Java" a la derecha */
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Coloca el menú a la derecha */
+    display: none;
+}
+
+/* Mostrar el menú al pasar el cursor sobre el submenu */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+
