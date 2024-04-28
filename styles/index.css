@@ -104,4 +104,22 @@ footer a {
     display: block;
 }
 
+.navbar-toggler{
+    color: #4d4ddb;
+    background-color: #53A9DB;
+    border-color: black;
+}
 
+.dropdown-menu {
+    max-width: 200px; /* Establece un ancho máximo para el menú desplegable */
+}
+
+.dropdown-submenu {
+    position: static; /* Cambiar el posicionamiento a estático */
+}
+
+.dropdown-submenu .dropdown-menu {
+    left: 21.5%; /* Posicionar el submenú a la derecha */
+    top:47%;
+    margin-top: -1px; /* Corregir el desplazamiento vertical */
+}
